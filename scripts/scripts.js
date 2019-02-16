@@ -16,6 +16,7 @@ function fillGrid(squarePerSide){
 
 function getValue() {
     let inputValue = document.querySelector('#textInput').value;
+    cleanGrid();
     fillGrid(inputValue);
 }
 
@@ -25,20 +26,20 @@ function cleanGrid() {
     })
 }
 
-function getColor() {
+function getRandomColor() {
     let hexCharacthers = '0123456789ABCDEF';
     let hexColor = '#';
 
     for(let i = 0; i < 6; i++) {
         hexColor += hexCharacthers[[Math.floor(Math.random() * 16)]];
-    }
+    }   
 
     return hexColor;
 }
 
 function changeColor() {
     if(event.target.style.backgroundColor == ''){
-        event.target.style.backgroundColor = getColor();
+        event.target.style.backgroundColor = getRandomColor();
     }
 }
 

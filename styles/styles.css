@@ -1,13 +1,48 @@
 body {
     background: #011627;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    place-items: center center;
     height: 100vh;
 }
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 599px;
+    margin-left: 100px;
+    margin-top: 270px;
+} 
+
+.menu input, button {
+    margin-top: 40px;
+}
+
+input {
+    background-color: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid white;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    outline: none;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 25px;
+    color: white;
+    font-size: 22.65px;
+    font-family: 'Oswald', sans-serif;
+    outline: none;
+    padding: 10px; 
+}
+
 
 .grid {
     display: flex;
@@ -22,3 +57,4 @@ body {
 .square {
     border: 0.1px solid white;
 }
+

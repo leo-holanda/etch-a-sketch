@@ -5,21 +5,19 @@
         <title>Etch-a-skecth</title>
         <link type="text/css" href="styles/normalize.css" rel="stylesheet">
         <link type="text/css" href="styles/styles.css" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
     </head>
 
     <body>
-        <input id="textInput" size=15>
-        <button id="inputButton">OK</button>
-        <button id="cleanButton">reset</button>
-        <main class=container>
-            <div class="grid" id="grid">
-
-            </div>            
-        </main>
+        <div class="menu">
+            <input id="textInput" size=25 placeholder="How many squares &#10per side?">
+            <button id="inputButton">OK</button>
+            <button id="cleanButton">CLEAN</button>        
+        </div>
+        
+        <div class="grid" id="grid"></div>            
+        
         <script src="scripts/scripts.js"></script>
     </body>
 
 </html>
-
-
-<!-- iniciado o grid primitivos -->

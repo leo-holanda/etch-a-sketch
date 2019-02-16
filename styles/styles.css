@@ -1,0 +1,24 @@
+body {
+    background: #011627;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 599px;
+    width: 599px;
+    border: 4.8541px solid white;
+    padding: 0px;
+}
+
+.square {
+    border: 0.1px solid white;
+}

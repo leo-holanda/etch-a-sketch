@@ -1,6 +1,6 @@
 function fillGrid(squarePerSide){
 
-    let squareSize = ((599 / squarePerSide) -0.2) + 'px';
+    let squareSize = ((599 / squarePerSide)) + 'px';
     let squareQuantity = squarePerSide ** 2;
 
     const grid = document.querySelector('#grid');

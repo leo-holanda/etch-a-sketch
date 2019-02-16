@@ -37,6 +37,7 @@ button {
     border: 3px solid white;
     border-radius: 25px;
     color: white;
+    cursor: pointer;
     font-size: 22.65px;
     font-family: 'Oswald', sans-serif;
     outline: none;
@@ -55,6 +56,7 @@ button {
 }
 
 .square {
+    box-sizing: border-box;
     border: 0.1px solid white;
 }
 

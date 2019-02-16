@@ -18,4 +18,11 @@ function getValue() {
     fillGrid(inputValue);
 }
 
+function cleanGrid() {
+    const grid = document.querySelectorAll('.square').forEach(function(square){
+        square.remove();
+    })
+}
+
 document.querySelector('#inputButton').addEventListener('click', getValue);
+document.querySelector('#cleanButton').addEventListener('click', cleanGrid);

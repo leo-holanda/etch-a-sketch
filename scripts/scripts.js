@@ -9,6 +9,7 @@ function fillGrid(squarePerSide){
         square.className = 'square';
         square.style.height = squareSize;
         square.style.width = squareSize;
+        square.addEventListener('mouseenter',changeColor);
         grid.appendChild(square);    
     }
 }
@@ -22,6 +23,23 @@ function cleanGrid() {
     const grid = document.querySelectorAll('.square').forEach(function(square){
         square.remove();
     })
+}
+
+function getColor() {
+    let hexCharacthers = '0123456789ABCDEF';
+    let hexColor = '#';
+
+    for(let i = 0; i < 6; i++) {
+        hexColor += hexCharacthers[[Math.floor(Math.random() * 16)]];
+    }
+
+    return hexColor;
+}
+
+function changeColor() {
+    if(event.target.style.backgroundColor == ''){
+        event.target.style.backgroundColor = getColor();
+    }
 }
 
 document.querySelector('#inputButton').addEventListener('click', getValue);

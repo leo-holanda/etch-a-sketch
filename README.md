@@ -6,7 +6,7 @@ a simple project based on *Etch-a-Sketch* for praticing DOM manipulation
 
 - HTML
 - CSS
-- Javascript
+- JavaScript
 
 from The Odin Project's [curriculum](http://www.theodinproject.com/courses/web-development-101/lessons/html-css)
 

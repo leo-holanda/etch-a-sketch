@@ -12,4 +12,4 @@ from The Odin Project's [curriculum](http://www.theodinproject.com/courses/web-d
 
 ## Acknowledgments
 
-- Thanks [The Odin Project's](https://www.theodinproject.com/) for the awesome free course and beginners-friendly projects!
+- Thanks [The Odin Project](https://www.theodinproject.com/) for the awesome free course and beginners-friendly projects!

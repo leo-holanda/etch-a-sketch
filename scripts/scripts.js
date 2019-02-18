@@ -16,6 +16,20 @@ function fillGrid(squarePerSide){
 
 function getValue() {
     let inputValue = document.querySelector('#textInput').value;
+    if(inputValue < 1 || inputValue > 64 || isNaN(inputValue)) {
+        alert("Please type a number between 1 and 64!")
+        cleanInput();
+    }
+    else {
+        startGrid(inputValue);
+    }
+}
+
+function cleanInput() {
+    let inputValue = document.querySelector('#textInput').value = '';
+}
+
+function startGrid(inputValue) {
     cleanGrid();
     fillGrid(inputValue);
 }
@@ -24,6 +38,7 @@ function cleanGrid() {
     const grid = document.querySelectorAll('.square').forEach(function(square){
         square.remove();
     })
+    cleanInput();
 }
 
 function getRandomColor() {

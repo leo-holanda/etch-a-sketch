@@ -1,14 +1,12 @@
 # Etch-a-sketch
 
-a simple project based on *Etch-a-Sketch* for praticing DOM manipulation
+a simple project based on [*Etch-a-Sketch*](https://en.wikipedia.org/wiki/Etch_A_Sketch) for praticing DOM manipulation! From The Odin Project's [curriculum](https://www.theodinproject.com/)
 
-## Build With
+## Built With
 
 - HTML
 - CSS
 - JavaScript
-
-from The Odin Project's [curriculum](http://www.theodinproject.com/courses/web-development-101/lessons/html-css)
 
 ## Acknowledgments
 
